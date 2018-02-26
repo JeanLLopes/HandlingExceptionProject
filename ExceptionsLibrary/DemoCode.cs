@@ -10,7 +10,20 @@ namespace ExceptionsLibrary
     {
         public int GrandParentMethod(int position)
         {
-            return ParentMethod(position);
+            var output = 0;
+            try
+            {
+                output= ParentMethod(position);
+            }
+            catch (Exception)
+            {
+                throw new ArgumentException("Erron in your argurment");
+            }
+            finally
+            {
+
+            }
+            return output;
         }
 
         public int ParentMethod(int position)
