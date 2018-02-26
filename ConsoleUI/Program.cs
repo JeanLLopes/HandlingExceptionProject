@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ExceptionsLibrary;
+using System;
 
 namespace ConsoleUI
 {
@@ -10,7 +7,10 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            a
+            DemoCode demoCode = new DemoCode();
+            Console.WriteLine($"this value at the givem position is {demoCode.GrandParentMethod(3)}");
+            Console.ReadLine();
+
         }
     }
 }
