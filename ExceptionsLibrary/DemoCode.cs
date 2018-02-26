@@ -1,28 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ExceptionsLibrary
+﻿namespace ExceptionsLibrary
 {
     public class DemoCode
     {
         public int GrandParentMethod(int position)
         {
             var output = 0;
-            try
-            {
-                output= ParentMethod(position);
-            }
-            catch (Exception)
-            {
-                throw new ArgumentException("Erron in your argurment");
-            }
-            finally
-            {
-
-            }
+            output= ParentMethod(position);
             return output;
         }
 
